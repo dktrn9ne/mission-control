@@ -1,10 +1,8 @@
 import memoriesData from "@/data/memories.json";
-import { requireAuth } from "@/lib/auth";
 
 type MemoryItem = { key: string; name: string; path?: string; url?: string };
 
-export default async function MemoriesPage() {
-  await requireAuth();
+export default function MemoriesPage() {
   const notes = (memoriesData as any).notes as string;
   const items = (memoriesData as any).memories as MemoryItem[];
 

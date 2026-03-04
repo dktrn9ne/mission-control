@@ -42,9 +42,6 @@ export default function RootLayout({
               <Link className="text-zinc-700 hover:text-zinc-900" href="/memories">
                 Memories
               </Link>
-              <a className="text-zinc-700 hover:text-zinc-900" href="/logout">
-                Logout
-              </a>
             </nav>
           </div>
         </header>

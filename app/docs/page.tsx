@@ -1,11 +1,9 @@
 import docsData from "@/data/docs.json";
-import { requireAuth } from "@/lib/auth";
 
 type DocItem = { label: string; url: string };
 type DocGroup = { key: string; name: string; items: DocItem[] };
 
-export default async function DocsPage() {
-  await requireAuth();
+export default function DocsPage() {
   const groups = (docsData as any).docs as DocGroup[];
 
   return (

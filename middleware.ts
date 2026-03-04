@@ -22,12 +22,18 @@ export function middleware(req: NextRequest) {
   const b64 = auth.slice(6).trim();
   let decoded = '';
   try {
-    decoded = Buffer.from(b64, 'base64').toString('utf8');
+    // Middleware runs on the Edge runtime; Buffer is not available.
+    decoded = atob(b64);
   } catch {
     return unauthorized();
   }
 
-  const [u, p] = decoded.split(':');
+  // Password may contain ':' so split on first ':' only.
+  const idx = decoded.indexOf(':');
+  if (idx < 0) return unauthorized();
+  const u = decoded.slice(0, idx);
+  const p = decoded.slice(idx + 1);
+
   if (u !== user || p !== pass) return unauthorized();
 
   return NextResponse.next();

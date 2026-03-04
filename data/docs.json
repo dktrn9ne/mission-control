@@ -1,0 +1,29 @@
+{
+  "updatedAt": "2026-03-04",
+  "docs": [
+    {
+      "key": "job-hunter-bot",
+      "name": "Job Hunter Bot",
+      "items": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/dktrn9ne/job-hunter-bot"
+        },
+        {
+          "label": "Dashboard",
+          "url": "https://job-hunter-bot-two.vercel.app"
+        }
+      ]
+    },
+    {
+      "key": "polymarket",
+      "name": "Polymarket Automation Stack",
+      "items": [
+        {
+          "label": "Fresh-dashboard repo",
+          "url": "https://github.com/dktrn9ne/Fresh-dashboard"
+        }
+      ]
+    }
+  ]
+}

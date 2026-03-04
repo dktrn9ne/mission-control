@@ -1,0 +1,11 @@
+{
+  "updatedAt": "2026-03-04",
+  "notes": "Mission Control cannot read your local OpenClaw memory files on Vercel. Add links here (Google Docs, Notion, GitHub markdown) if you want them accessible from anywhere.",
+  "memories": [
+    {
+      "key": "local",
+      "name": "Local OpenClaw memories (on PC)",
+      "path": "C:/Users/willi/.openclaw/workspace/memory/"
+    }
+  ]
+}

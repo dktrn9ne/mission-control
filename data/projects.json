@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-03-03",
+  "projects": [
+    {
+      "key": "job-hunter-bot",
+      "name": "Job Hunter Bot",
+      "type": "Bot + Dashboard",
+      "repo": "https://github.com/dktrn9ne/job-hunter-bot",
+      "urls": [
+        {"label": "Dashboard", "url": "https://job-hunter-bot-two.vercel.app"}
+      ],
+      "notes": "Local bot + Cloudflare tunnel; Vercel dashboard; tailoring-first roadmap."
+    },
+    {
+      "key": "polymarket-starter-bot",
+      "name": "Polymarket Starter Bot",
+      "type": "Bot",
+      "repo": "(local) C:/Users/willi/.openclaw/workspace/polymarket-starter-bot",
+      "urls": [],
+      "notes": "Metrics/events/ledger; box-arb safety; tunnel used for dashboard."
+    },
+    {
+      "key": "fresh-dashboard",
+      "name": "Fresh Dashboard",
+      "type": "Dashboard",
+      "repo": "https://github.com/dktrn9ne/Fresh-dashboard",
+      "urls": [],
+      "notes": "Polymarket bot monitoring dashboard (Vercel)."
+    },
+    {
+      "key": "myspace-resume",
+      "name": "MySpace Resume",
+      "type": "Site",
+      "repo": "https://github.com/dktrn9ne/myspace-resume",
+      "urls": [
+        {"label": "Live", "url": "https://myspace-resume.vercel.app"}
+      ],
+      "notes": "Background video + Top 8 + music bar."
+    },
+    {
+      "key": "etsy-research",
+      "name": "Amazon/Etsy Product Research Engine",
+      "type": "Skill",
+      "repo": "(installed) skills/amazon-etsy-product-research",
+      "urls": [],
+      "notes": "Apify-powered; use for FiveM MLO/script pack research."
+    }
+  ]
+}

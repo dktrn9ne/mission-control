@@ -1,4 +1,5 @@
 import projectsData from "@/data/projects.json";
+import { requireAuth } from "@/lib/auth";
 
 type ProjectUrl = { label: string; url: string };
 type Project = {
@@ -10,7 +11,8 @@ type Project = {
   notes?: string;
 };
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  await requireAuth();
   const projects = (projectsData as any).projects as Project[];
 
   return (

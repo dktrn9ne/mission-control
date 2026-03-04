@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { requireAuth } from "@/lib/auth";
 
-export default function Home() {
+export default async function Home() {
+  await requireAuth();
   return (
     <div className="min-h-screen bg-zinc-50 p-6 md:p-10 text-zinc-900">
       <div className="mx-auto max-w-6xl">
